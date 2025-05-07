@@ -52,16 +52,19 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 10px; /* 增加按钮之间的间距 */
       }
       nav li {
-        margin: 5px;
+        margin: 0; /* 移除多余的外边距 */
       }
       nav button {
         font-size: 12px;
-        padding: 8px 10px;
+        padding: 8px 12px; /* 调整按钮内边距 */
+        border-radius: 6px; /* 增加圆角 */
       }
       main {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px; /* 调整商品卡片间距 */
       }
     }
 
@@ -69,10 +72,17 @@
     @media (max-width: 480px) {
       main {
         grid-template-columns: 1fr;
+        gap: 10px; /* 减小商品卡片间距 */
       }
       nav button {
         font-size: 10px;
-        padding: 6px 8px;
+        padding: 6px 10px; /* 进一步缩小按钮内边距 */
+      }
+      .card .title {
+        font-size: 14px; /* 缩小标题字体 */
+      }
+      .card .price {
+        font-size: 16px; /* 缩小价格字体 */
       }
     }
   </style>
