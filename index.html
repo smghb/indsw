@@ -35,6 +35,20 @@
     .card img { max-width: 100%; height: auto; border-radius: 4px; }
     .card .title { margin: 10px 0 5px; font-size: 16px; color: #333; }
     .card .price { font-size: 18px; color: #c00; }
+
+    /* 响应式布局：在手机端显示两列 */
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* 响应式布局：在更小屏幕上显示一列 */
+    @media (max-width: 480px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
