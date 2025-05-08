@@ -1,4 +1,4 @@
-﻿﻿﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -57,15 +57,39 @@
 
     /* 响应式布局：在手机端显示两列 */
     @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 10px;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; /* 增加按钮之间的间距 */
+      }
+      nav li {
+        margin: 0; /* 移除多余的外边距 */
+      }
+      nav button {
+        font-size: 12px;
+        padding: 8px 12px; /* 调整按钮内边距 */
+        border-radius: 6px; /* 增加圆角 */
+      }
       main {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
     /* 响应式布局：在更小屏幕上显示一列 */
     @media (max-width: 480px) {
       main {
-        grid-template-columns: 3fr;
+        grid-template-columns: 1fr;
       }
     }
   </style>
