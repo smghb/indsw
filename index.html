@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -13,10 +13,21 @@
     header img.banner { max-width: 100%; height: auto; }
 
     /* 设置主容器样式 */
-    .container { display: flex; max-width: 1200px; margin: 20px auto; }
+    .container { 
+      display: flex; 
+      max-width: 1200px; 
+      margin: 20px auto; 
+      height: calc(100vh - 40px); /* 减去container的margin */
+      overflow: hidden; /* 防止container本身出现滚动条 */
+    }
 
     /* 设置导航栏样式 */
-    nav { width: 200px; }
+    nav { 
+      width: 200px;
+      overflow-y: auto; /* 添加垂直滚动 */
+      height: 100%; /* 继承container的高度 */
+      padding-right: 10px; /* 为滚动条预留空间 */
+    }
     nav ul { list-style: none; padding: 0; margin: 0; }
     nav li { margin-bottom: 10px; }
     nav button {
@@ -28,7 +39,15 @@
     nav button.active { background: limegreen; color: #c00; }
 
     /* 设置主内容区域样式 */
-    main { flex: 1; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+    main { 
+      flex: 1; 
+      display: grid; 
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+      gap: 20px; 
+      overflow-y: auto; /* 添加垂直滚动 */
+      height: 100%; /* 继承container的高度 */
+      padding: 0 10px; /* 为滚动条预留空间 */
+    }
 
     /* 设置商品卡片样式 */
     .card { background: #d2f0d2; padding: 15px; border-radius: 8px; text-align: center; cursor: pointer; }
@@ -39,14 +58,14 @@
     /* 响应式布局：在手机端显示两列 */
     @media (max-width: 768px) {
       main {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
       }
     }
 
     /* 响应式布局：在更小屏幕上显示一列 */
     @media (max-width: 480px) {
       main {
-        grid-template-columns: 1fr;
+        grid-template-columns: 3fr;
       }
     }
   </style>
