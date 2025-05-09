@@ -1,4 +1,4 @@
-﻿﻿<!DOCTYPE html>
+﻿﻿﻿﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -55,41 +55,87 @@
     .card .title { margin: 10px 0 5px; font-size: 16px; color: #333; }
     .card .price { font-size: 18px; color: #c00; }
 
-    /* 响应式布局：在手机端显示两列 */
+    /* 移动端响应式布局 */
     @media (max-width: 768px) {
       .container {
-        flex-direction: column;
-        padding: 10px;
+        margin: 10px;
+        height: calc(100vh - 20px);
       }
+
       nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 20px;
+        width: 120px;
+        padding-right: 5px;
       }
-      nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px; /* 增加按钮之间的间距 */
-      }
-      nav li {
-        margin: 0; /* 移除多余的外边距 */
-      }
+
       nav button {
+        padding: 8px 5px;
         font-size: 12px;
-        padding: 8px 12px; /* 调整按钮内边距 */
-        border-radius: 6px; /* 增加圆角 */
       }
+
       main {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 10px;
+        padding: 0 5px;
+      }
+
+      .card {
+        padding: 4px 6px;
+        height: auto;
+        min-height: 100px; /* 设置最小高度 */
+      }
+      
+      .card .title {
+        font-size: 12px;
+        margin: 2px 0;
+        line-height: 1.2;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* 限制标题最多2行 */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      
+      .card .price {
+        font-size: 13px;
+        margin: 2px 0 3px;
+      }
+
+      /* 调整主内容区域高度 */
+      main {
+        max-height: none !important;
+        height: calc(100vh - 60px) !important;
+      }
+
+      .card .title {
+        font-size: 14px;
+        margin: 5px 0;
+      }
+
+      .card .price {
+        font-size: 16px;
       }
     }
 
-    /* 响应式布局：在更小屏幕上显示一列 */
+    /* 小屏幕设备的额外调整 */
     @media (max-width: 480px) {
+      nav {
+        width: 100px;
+      }
+
+      nav button {
+        font-size: 11px;
+        padding: 6px 3px;
+      }
+
       main {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      }
+
+      .card .title {
+        font-size: 12px;
+      }
+
+      .card .price {
+        font-size: 14px;
       }
     }
   </style>
