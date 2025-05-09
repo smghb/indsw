@@ -50,7 +50,7 @@
     }
 
     /* 设置商品卡片样式 */
-    .card { background: #b9e8c9; padding: 15px; border-radius: 8px; text-align: center; cursor: pointer; }
+    .card { background: #def3df; padding: 15px; border-radius: 8px; text-align: center; cursor: pointer; }
     .card img { max-width: 100%; height: auto; border-radius: 4px; }
     .card .title { margin: 10px 0 5px; font-size: 16px; color: #333; }
     .card .price { font-size: 18px; color: #c00; }
@@ -147,155 +147,231 @@
   <div class="container">
     <nav>
       <ul>
-        <li><button class="active" onclick="showCategory('official')">弱碱小米</button></li>
-        <li><button onclick="showCategory('custom')">五芳斋福利定制款</button></li>
-        <li><button onclick="showCategory('xigewei')">西格薇</button></li>
-        <li><button onclick="showCategory('meicheng')">美诚</button></li>
-        <li><button onclick="showCategory('daoxiangcun')">稻香村</button></li>
-        <li><button onclick="showCategory('daoxiangcun2025')">稻香村公版2025</button></li>
-        <li><button onclick="showCategory('fengweipai')">锋味派</button></li>
-        <li><button onclick="showCategory('jiaxiangxi')">嘉乡希</button></li>
+        <li><button class="active" onclick="showCategory('official')">200组合A套餐</button></li>
+        <li><button onclick="showCategory('custom')">200组合B套餐</button></li>
+        <li><button onclick="showCategory('xigewei')">300组合A套餐</button></li>
+        <li><button onclick="showCategory('meicheng')">300组合B套餐</button></li>
+        <li><button onclick="showCategory('daoxiangcun')">500元组合A套餐</button></li>
+        <li><button onclick="showCategory('daoxiangcuncc')">500元组合B套餐</button></li>
+        <li><button onclick="showCategory('fengweipai')">600元组合A套餐</button></li>
+        <li><button onclick="showCategory('jiaxiangxi')">600元组合B套餐</button></li>
       </ul>
     </nav>
     <main>
       <!-- 商品卡片 -->
       <div class="card category-official" onclick="showDetails('official1')">
-        <img src="images/gift7.jpg" alt="惜享五芳">
-        <div class="title">弱碱小米</div>
+        <img src="images/gift7.jpg" alt="东北玉米碴">
+        <div class="title">东北玉米碴</div>
         <div class="price">¥95.00</div>
       </div>
       <div class="card category-official" onclick="showDetails('official2')">
-        <img src="images/gift8.jpg" alt="情系五芳">
-        <div class="title">情系五芳</div>
+        <img src="images/gift8.jpg" alt="精品荞麦面">
+        <div class="title">精品荞麦面</div>
         <div class="price">¥105.00</div>
       </div>
       <div class="card category-official" onclick="showDetails('official3')">
-        <img src="images/gift9.jpg" alt="经典五芳">
-        <div class="title">经典五芳</div>
+        <img src="images/gift9.jpg" alt="一级黄金小米">
+        <div class="title">一级黄金小米</div>
         <div class="price">¥149.00</div>
+      
       </div>
-      <div class="card category-official" onclick="showDetails('official4')">
-        <img src="images/gift10.jpg" alt="韵味五芳">
-        <div class="title">韵味五芳</div>
-        <div class="price">¥159.00</div>
-      </div>
-      <!-- 五芳斋福利定制款商品卡片 -->
+      <!-- 200B套餐商品卡片 -->
       <div class="card category-custom" style="display: none;" onclick="showDetails('custom1')">
-        <img src="images/gift11.jpg" alt="臻享五芳">
-        <div class="title">臻享五芳</div>
+        <img src="images/gift11.jpg" alt="五谷杂粮">
+        <div class="title">五谷杂粮</div>
         <div class="price">¥199.00</div>
       </div>
       <div class="card category-custom" style="display: none;" onclick="showDetails('custom2')">
-        <img src="images/gift12.jpg" alt="尊享五芳">
-        <div class="title">尊享五芳</div>
+        <img src="images/gift9.jpg" alt="一级黄金小米">
+        <div class="title">一级黄金小米</div>
         <div class="price">¥299.00</div>
       </div>
       <div class="card category-custom" style="display: none;" onclick="showDetails('custom3')">
-        <img src="images/gift13.jpg" alt="臻享五芳">
-        <div class="title">臻享五芳</div>
+        <img src="images/gift13.jpg" alt="甄选黄米">
+        <div class="title">甄选黄米</div>
         <div class="price">¥199.00</div>
       </div>
-      <div class="card category-custom" style="display: none;" onclick="showDetails('custom4')">
-        <img src="images/gift14.jpg" alt="尊享五芳">
-        <div class="title">尊享五芳</div>
-        <div class="price">¥299.00</div>
-      </div>
+     
 
-      <!-- 新增的商品卡片，属于西格薇 -->
+      <!-- 新增的商品卡片，属于300组合A套餐 -->
       <div class="card category-xigewei" style="display: none;" onclick="showDetails('xigewei1')">
-        <img src="images/xigewei1.jpg" alt="西格薇礼盒1">
-        <!-- 替换为西格薇的商品图片 -->
-        <div class="title">西格薇礼盒1</div>
+        <img src="images/xigewei1.jpg" alt="精品高粱米">
+        <!-- 替换为精品高粱的商品图片 -->
+        <div class="title">精品高粱米</div>
         <div class="price">¥120.00</div>
       </div>
       <div class="card category-xigewei" style="display: none;" onclick="showDetails('xigewei2')">
-        <img src="images/xigewei2.jpg" alt="西格薇礼盒2">
-        <!-- 替换为西格薇的商品图片 -->
-        <div class="title">西格薇礼盒2</div>
+        <img src="images/xigewei2.jpg" alt="五常稻花香">
+        <!-- 替换为五常稻花香的商品图片 -->
+        <div class="title">五常稻花香</div>
         <div class="price">¥150.00</div>
       </div>
+      <div class="card category-xigewei" style="display: none;" onclick="showDetails('xigewei3')">
+        <img src="images/gift9.jpg" alt="一级黄金小米">
+        <div class="title">一级黄金小米</div>
+        <div class="price">¥299.00</div>
+      </div>
 
-      <!-- 新增的商品卡片，属于美诚 -->
+      <!-- 新增的商品卡片，属于300组合B套餐 -->
       <div class="card category-meicheng" style="display: none;" onclick="showDetails('meicheng1')">
-        <img src="images/meicheng1.jpg" alt="美诚礼盒1">
-        <!-- 替换为美诚的商品图片 -->
-        <div class="title">美诚礼盒1</div>
+        <img src="images/gift7.jpg" alt="东北玉米碴.">
+        <!-- 替换为300组合B套餐商品图片 -->
+        <div class="title">东北玉米碴.</div>
         <div class="price">¥130.00</div>
       </div>
       <div class="card category-meicheng" style="display: none;" onclick="showDetails('meicheng2')">
-        <img src="images/meicheng2.jpg" alt="美诚礼盒2">
-        <!-- 替换为美诚的商品图片 -->
-        <div class="title">美诚礼盒2</div>
+        <img src="images/meicheng2.jpg" alt="藜麦（三色藜麦）">
+        <!-- 替换为300组合B套餐商品图片 -->
+        <div class="title">藜麦（三色藜麦）</div>
         <div class="price">¥160.00</div>
       </div>
+       <div class="card category-meicheng" style="display: none;" onclick="showDetails('meicheng3')">
+        <img src="images/meicheng1.jpg" alt="真空向海鸭蛋..">
+        <!-- 替换为300组合B套餐商品图片 -->
+        <div class="title">真空向海鸭蛋..</div>
+        <div class="price">¥130.00</div>
+      </div>
 
-      <!-- 新增的商品卡片，属于稻香村 -->
+      <!-- 新增的商品卡片，属于500A套餐图片 -->
       <div class="card category-daoxiangcun" style="display: none;" onclick="showDetails('daoxiangcun1')">
-        <img src="images/daoxiangcun1.jpg" alt="稻香村礼盒1">
-        <!-- 替换为稻香村的商品图片 -->
-        <div class="title">稻香村礼盒1</div>
+        <img src="images/daoxiangcun1.jpg" alt="即食水煮花生">
+        <!-- 替换为500A套餐图片的商品图片 -->
+        <div class="title">即食水煮花生</div>
         <div class="price">¥140.00</div>
       </div>
       <div class="card category-daoxiangcun" style="display: none;" onclick="showDetails('daoxiangcun2')">
-        <img src="images/daoxiangcun2.jpg" alt="稻香村礼盒2">
-        <!-- 替换为稻香村的商品图片 -->
-        <div class="title">稻香村礼盒2</div>
+        <img src="images/meicheng2.jpg" alt="藜麦（三色藜麦）">
+        <!-- 替换为500A套餐图片的商品图片 -->
+        <div class="title">藜麦（三色藜麦）</div>
         <div class="price">¥170.00</div>
       </div>
+      <div class="card category-daoxiangcun" style="display: none;" onclick="showDetails('daoxiangcun3')">
+        <img src="images/gift9.jpg" alt="一级黄金小米">
+        <!-- 替换为500A套餐图片的商品图片 -->
+        <div class="title">一级黄金小米</div>
+        <div class="price">¥170.00</div>
+      </div>
+      <div class="card category-daoxiangcun" style="display: none;" onclick="showDetails('daoxiangcun4')">
+        <img src="images/gift10.jpg" alt="农村笨鸡蛋">
+        <!-- 替换为500A套餐图片的商品图片 -->
+        <div class="title">农村笨鸡蛋</div>
+        <div class="price">¥170.00</div>
+      </div>
+      <div class="card category-daoxiangcun" style="display: none;" onclick="showDetails('daoxiangcun5')">
+        <img src="images/gift14.jpg" alt="全麦面粉">
+        <!-- 替换为500A套餐图片的商品图片 -->
+        <div class="title">全麦面粉</div>
+        <div class="price">¥170.00</div>
+      </div>
+      
 
-      <!-- 新增的商品卡片，属于稻香村公版2025 -->
-      <div class="card category-daoxiangcun2025" style="display: none;" onclick="showDetails('daoxiangcun2025_1')">
-        <img src="images/daoxiangcun2025_1.jpg" alt="稻香村公版礼盒1">
-        <!-- 替换为稻香村公版2025的商品图片 -->
-        <div class="title">稻香村公版礼盒1</div>
+      <!-- 新增的商品卡片，属于500元组合B套餐 -->
+      <div class="card category-daoxiangcuncc" style="display: none;" onclick="showDetails('daoxiangcuncc1')">
+        <img src="images/xigewei1.jpg" alt="精品高粱米">
+        <!-- 替换为500元组合B套餐的商品图片 -->
+        <div class="title">精品高粱米</div>
         <div class="price">¥180.00</div>
       </div>
-      <div class="card category-daoxiangcun2025" style="display: none;" onclick="showDetails('daoxiangcun2025_2')">
-        <img src="images/daoxiangcun2025_2.jpg" alt="稻香村公版礼盒2">
-        <!-- 替换为稻香村公版2025的商品图片 -->
-        <div class="title">稻香村公版礼盒2</div>
+      <div class="card category-daoxiangcuncc" style="display: none;" onclick="showDetails('daoxiangcuncc2')">
+        <img src="images/gift8.jpg" alt="精品荞麦面">
+        <!-- 替换为500元组合B套餐的商品图片 -->
+        <div class="title">精品荞麦面</div>
+        <div class="price">¥200.00</div>
+      </div>
+      <div class="card category-daoxiangcuncc" style="display: none;" onclick="showDetails('daoxiangcuncc3')">
+        <img src="images/daoxiangcun2025_2.jpg" alt="双黄咸大雁蛋.">
+        <!-- 替换为500元组合B套餐的商品图片 -->
+        <div class="title">双黄咸大雁蛋.</div>
+        <div class="price">¥200.00</div>
+      </div>
+      <div class="card category-daoxiangcuncc" style="display: none;" onclick="showDetails('daoxiangcuncc4')">
+        <img src="images/wuguzaliang.jpg" alt="五谷杂粮">
+        <!-- 替换为500元组合B套餐的商品图片 -->
+        <div class="title">五谷杂粮</div>
+        <div class="price">¥200.00</div>
+      </div>
+      <div class="card category-daoxiangcuncc" style="display: none;" onclick="showDetails('daoxiangcuncc5')">
+        <img src="images/ruojianxiaomi.jpg" alt="一级弱碱小米">
+        <!-- 替换为500元组合B套餐的商品图片 -->
+        <div class="title">一级弱碱小米</div>
         <div class="price">¥200.00</div>
       </div>
 
-      <!-- 新增的商品卡片，属于锋味派 -->
+      <!-- 新增的商品卡片，属于600组合A套餐 -->
       <div class="card category-fengweipai" style="display: none;" onclick="showDetails('fengweipai1')">
-        <img src="images/fengweipai1.jpg" alt="锋味派礼盒1">
-        <!-- 替换为锋味派的商品图片 -->
-        <div class="title">锋味派礼盒1</div>
+        <img src="images/wuguzaliang.jpg" alt="五谷杂粮">
+        <!-- 替换为600组合A套餐的商品图片 -->
+        <div class="title">五谷杂粮</div>
         <div class="price">¥110.00</div>
       </div>
       <div class="card category-fengweipai" style="display: none;" onclick="showDetails('fengweipai2')">
-        <img src="images/fengweipai2.jpg" alt="锋味派礼盒2">
-        <!-- 替换为锋味派的商品图片 -->
-        <div class="title">锋味派礼盒2</div>
+        <img src="images/ruojianxiaomi.jpg" alt="一级弱碱小米">
+        <!-- 替换为600组合A套餐的商品图片 -->
+        <div class="title">一级弱碱小米</div>
         <div class="price">¥130.00</div>
       </div>
-      <div class="card category-fengweipai" style="display: none;" onclick="showDetails('fengweipai2')">
-        <img src="images/fengweipai3.jpg" alt="锋味派礼盒3">
-        <!-- 替换为锋味派的商品图片 -->
-        <div class="title">锋味派礼盒2</div>
-        <div class="price">¥130.00</div>
-      </div>
-
-      <div class="card category-fengweipai" style="display: none;" onclick="showDetails('fengweipai2')">
-        <img src="images/fengweipai4.jpg" alt="锋味派礼盒4">
-        <!-- 替换为锋味派的商品图片 -->
-        <div class="title">锋味派礼盒2</div>
+      <div class="card category-fengweipai" style="display: none;" onclick="showDetails('fengweipai3')">
+        <img src="images/meicheng2.jpg" alt="藜麦（三色藜麦）">
+        <!-- 替换为600组合A套餐的商品图片 -->
+        <div class="title">藜麦（三色藜麦）</div>
         <div class="price">¥130.00</div>
       </div>
 
+      <div class="card category-fengweipai" style="display: none;" onclick="showDetails('fengweipai4')">
+        <img src="images/gift10.jpg" alt="农村笨鸡蛋">
+        <!-- 替换为600组合A套餐的商品图片 -->
+        <div class="title">农村笨鸡蛋</div>
+        <div class="price">¥130.00</div>
+      </div>
+      <div class="card category-fengweipai" style="display: none;" onclick="showDetails('fengweipai5')">
+        <img src="images/gift14.jpg" alt="全麦面粉">
+        <!-- 替换为600组合A套餐的商品图片 -->
+        <div class="title">全麦面粉</div>
+        <div class="price">¥130.00</div>
+      </div>
+      <div class="card category-fengweipai" style="display: none;" onclick="showDetails('fengweipai6')">
+        <img src="images/yanmai.jpg" alt="燕麦">
+        <!-- 替换为600组合A套餐的商品图片 -->
+        <div class="title">燕麦</div>
+        <div class="price">¥130.00</div>
+      </div>
 
-      <!-- 新增的商品卡片，属于嘉乡希 -->
+
+      <!-- 新增的商品卡片，属于600组合B套餐 -->
       <div class="card category-jiaxiangxi" style="display: none;" onclick="showDetails('jiaxiangxi1')">
-        <img src="images/jiaxiangxi1.jpg" alt="嘉乡希礼盒1">
-        <!-- 替换为嘉乡希的商品图片 -->
-        <div class="title">嘉乡希礼盒1</div>
+        <img src="images/xigewei1.jpg" alt="精品高粱米">
+        <!-- 替换为600组合B套餐的商品图片 -->
+        <div class="title">精品高粱米</div>
         <div class="price">¥125.00</div>
       </div>
       <div class="card category-jiaxiangxi" style="display: none;" onclick="showDetails('jiaxiangxi2')">
-        <img src="images/jiaxiangxi2.jpg" alt="嘉乡希礼盒2">
-        <!-- 替换为嘉乡希的商品图片 -->
-        <div class="title">嘉乡希礼盒2</div>
+        <img src="images/daoxiangcun2025_2.jpg" alt="双黄咸大雁蛋">
+        <!-- 替换为600组合B套餐的商品图片 -->
+        <div class="title">双黄咸大雁蛋</div>
+        <div class="price">¥145.00</div>
+      </div>
+      <div class="card category-jiaxiangxi" style="display: none;" onclick="showDetails('jiaxiangxi3')">
+        <img src="images/ruojianxiaomi.jpg" alt="一级弱碱小米">
+        <!-- 替换为600组合B套餐的商品图片 -->
+        <div class="title">一级弱碱小米</div>
+        <div class="price">¥145.00</div>
+      </div>
+      <div class="card category-jiaxiangxi" style="display: none;" onclick="showDetails('jiaxiangxi4')">
+        <img src="images/xigewei2.jpg" alt="五常稻花香">
+        <!-- 替换为600组合B套餐的商品图片 -->
+        <div class="title">五常稻花香</div>
+        <div class="price">¥145.00</div>
+      </div>
+      <div class="card category-jiaxiangxi" style="display: none;" onclick="showDetails('jiaxiangxi5')">
+        <img src="images/jinmaimianfen.jpg" alt="金麦面粉">
+        <!-- 替换为600组合B套餐的商品图片 -->
+        <div class="title">金麦面粉</div>
+        <div class="price">¥145.00</div>
+      </div>
+      <div class="card category-jiaxiangxi" style="display: none;" onclick="showDetails('jiaxiangxi6')">
+        <img src="images/gift14.jpg" alt="全麦面粉">
+        <!-- 替换为600组合B套餐的商品图片 -->
+        <div class="title">全麦面粉</div>
         <div class="price">¥145.00</div>
       </div>
     </main>
@@ -340,9 +416,9 @@
     const productDetails = {
       official1: {
         img: "images/gift7.jpg",
-        title: "弱碱小米2222222222222222222222222",
+        title: "东北玉米碴",
         price: "¥95.00",
-        description: "这是一款经典的五芳斋礼盒，包含多种口味的粽子，适合家庭分享。",
+        description: "这是一款经典的玉米碴礼盒",
         images: [
           "images/gift7_1.jpg",
           "images/gift7_2.jpg",
@@ -351,176 +427,367 @@
       },
       official2: {
         img: "images/gift8.jpg",
-        title: "情系五芳",
+        title: "精品荞面",
         price: "¥105.00",
-        description: "情系五芳礼盒，精选优质食材，传递浓浓情意。",
+        description: "荞面礼盒，精选优质食材，传递浓浓情意。",
         images: [
           "images/gift8_1.jpg",
-          "images/gift8_2.jpg"
+          "images/gift8_2.jpg",
+          "images/gift8_3.jpg"
         ]
       },
       official3: {
         img: "images/gift9.jpg",
-        title: "经典五芳",
+        title: "一级黄金小米 ",
         price: "¥149.00",
-        description: "经典五芳礼盒，传承传统工艺，口感丰富。",
+        description: "经典小米礼盒，传承传统工艺，口感丰富。",
         images: [
           "images/gift9_1.jpg",
           "images/gift9_2.jpg",
           "images/gift9_3.jpg"
         ]
      },
-      official4: {
-        img: "images/gift10.jpg",
-        title: "韵味五芳",
-        price: "¥159.00",
-        description: "韵味五芳礼盒，包装精美，适合送礼。",
-        images: [
-          "images/gift10_1.jpg",
-          "images/gift10_2.jpg"
-        ]
-      },
       custom1: {
         img: "images/gift11.jpg",
-        title: "臻享五芳",
+        title: "五谷杂粮",
         price: "¥199.00",
-        description: "臻享五芳礼盒，精选优质食材，满足您的味蕾。",
+        description: "五谷杂粮礼盒，精选优质食材，满足您的味蕾。",
         images: [
           "images/gift11_1.jpg",
-          "images/gift11_2.jpg"
+          "images/gift11_2.jpg",
+          "images/gift11_3.jpg"
         ]
       },
       custom2: {
-        img: "images/gift12.jpg",
-        title: "尊享五芳",
+        img: "images/gift9.jpg",
+        title: "一级黄金小米",
         price: "¥299.00",
-        description: "尊享五芳礼盒，豪华配置，尽显尊贵。",
+        description: "尊享小米礼盒，豪华配置，尽显尊贵。",
         images: [
-          "images/gift12_1.jpg",
-          "images/gift12_2.jpg",
-          "images/gift12_3.jpg"
+          "images/gift9_1.jpg",
+          "images/gift9_2.jpg",
+          "images/gift9_3.jpg"
+        ]
+      },
+      custom3: {
+        img: "images/gift13.jpg",
+        title: "甄选黄米",
+        price: "¥120.00",
+        description: "甄选黄米礼盒，独特风味，适合多种场合。",
+        images: [
+          "images/gift13_1.jpg",
+          "images/gift13_2.jpg",
+          "images/gift13_3.jpg"
         ]
       },
       xigewei1: {
         img: "images/xigewei1.jpg",
-        title: "西格薇礼盒1",
-        price: "¥120.00",
-        description: "西格薇礼盒，独特风味，适合多种场合。",
+        title: "精品高粱米礼盒2",
+        price: "¥150.00",
+        description: "精品高粱米礼盒2，精选优质原料，口感丰富。",
         images: [
           "images/xigewei1_1.jpg",
-          "images/xigewei1_2.jpg"
+          "images/xigewei1_2.jpg",
+          "images/xigewei1_3.jpg"
         ]
       },
       xigewei2: {
         img: "images/xigewei2.jpg",
-        title: "西格薇礼盒2",
-        price: "¥150.00",
-        description: "西格薇礼盒2，精选优质原料，口感丰富。",
+        title: "五常稻花香",
+        price: "¥130.00",
+        description: "五常稻花香礼盒，包装精美，适合送礼。",
         images: [
           "images/xigewei2_1.jpg",
-          "images/xigewei2_2.jpg"
+          "images/xigewei2_2.jpg",
+          "images/xigewei2_3.jpg"
+        ]
+      },
+      xigewei3: {
+        img: "images/gift9.jpg",
+        title: "一级黄金小米",
+        price: "¥160.00",
+        description: "一级黄金小米礼盒2，丰富的口味选择，满足不同需求。",
+        images: [
+          "images/gift9_1.jpg",
+          "images/gift9_2.jpg",
+          "images/gift9_3.jpg"
         ]
       },
       meicheng1: {
-        img: "images/meicheng1.jpg",
-        title: "美诚礼盒1",
-        price: "¥130.00",
-        description: "美诚礼盒1，包装精美，适合送礼。",
+        img: "images/gift7.jpg",
+        title: "东北玉米碴",
+        price: "¥140.00",
+        description: "东北玉米碴礼盒1，传统工艺制作，经典美味。",
         images: [
-          "images/meicheng1_1.jpg",
-          "images/meicheng1_2.jpg"
-        ]
+          "images/gift7_1.jpg",
+          "images/gift7_2.jpg",
+          "images/gift7_3.jpg"
+        ] 
       },
       meicheng2: {
         img: "images/meicheng2.jpg",
-        title: "美诚礼盒2",
-        price: "¥160.00",
-        description: "美诚礼盒2，丰富的口味选择，满足不同需求。",
+        title: "藜麦（三色藜麦）",
+        price: "¥140.00",
+        description: "荞藜麦（三色藜麦）礼盒1，传统工艺制作，经典美味。",
         images: [
           "images/meicheng2_1.jpg",
-          "images/meicheng2_2.jpg"
-        ]
+          "images/meicheng2_2.jpg",
+          "images/meicheng2_3.jpg"
+        ] 
+      },
+      meicheng3: {
+        img: "images/meicheng1.jpg",
+        title: "真空向海鸭蛋",
+        price: "¥140.00",
+        description: "真空向海鸭蛋礼盒1，传统工艺制作，经典美味。",
+        images: [
+          "images/meicheng1_1.jpg",
+          "images/meicheng1_2.jpg",
+          "images/meicheng1_3.jpg"
+        ] 
       },
       daoxiangcun1: {
         img: "images/daoxiangcun1.jpg",
-        title: "稻香村礼盒1",
-        price: "¥140.00",
-        description: "稻香村礼盒1，传统工艺制作，经典美味。",
+        title: "即食水煮花生",
+        price: "¥170.00",
+        description: "即食水煮花生礼盒，丰富的内容，适合家庭分享。",
         images: [
           "images/daoxiangcun1_1.jpg",
-          "images/daoxiangcun1_2.jpg"
-        ] 
+          "images/daoxiangcun1_2.jpg",
+          "images/daoxiangcun1_3.jpg"
+        ]
       },
       daoxiangcun2: {
-        img: "images/daoxiangcun2.jpg",
-        title: "稻香村礼盒2",
-        price: "¥170.00",
-        description: "稻香村礼盒2，丰富的内容，适合家庭分享。",
-        images: [
-          "images/daoxiangcun2_1.jpg",
-          "images/daoxiangcun2_2.jpg"
-        ]
-      },
-      daoxiangcun2025_1: {
-        img: "images/daoxiangcun2025_1.jpg",
-        title: "稻香村公版礼盒1",
+        img: "images/meicheng2.jpg",
+        title: "藜麦（三色藜麦）",
         price: "¥180.00",
-        description: "稻香村公版礼盒1，经典与现代的结合，独特风味。",
+        description: "藜麦（三色藜麦）礼盒，经典与现代的结合，独特风味。",
         images: [
-          "images/daoxiangcun2025_1_1.jpg",
-          "images/daoxiangcun2025_1_2.jpg"
+          "images/meicheng2_1.jpg",
+          "images/meicheng2_2.jpg",
+          "images/meicheng2_3.jpg"
         ]
       },
-      daoxiangcun2025_2: {
-        img: "images/daoxiangcun2025_2.jpg",
-        title: "稻香村公版礼盒2",
+      daoxiangcun3: {
+        img: "images/gift9.jpg",
+        title: "一级黄金小米",
         price: "¥200.00",
-        description: "稻香村公版礼盒2，豪华配置，尽显品质。",
+        description: "一级黄金小米礼盒2，豪华配置，尽显品质。",
+        images: [
+          "images/gift9_1.jpg",
+          "images/gift9_2.jpg",
+          "images/gift9_3.jpg"
+        ]
+      },
+      daoxiangcun4: {
+        img: "images/gift10.jpg",
+        title: "农村笨鸡蛋",
+        price: "¥110.00",
+        description: "农村笨鸡蛋，独特风味，满足您的味蕾。",
+        images: [
+          "images/gift10_1.jpg",
+          "images/gift10_2.jpg",
+          "images/gift10_3.jpg"
+        ]
+      },
+      daoxiangcun5: {
+        img: "images/gift14.jpg",
+        title: "全麦面粉",
+        price: "¥130.00",
+        description: "全麦面粉，精选优质原料，口感丰富。",
+        images: [
+          "images/gift14_1.jpg",
+          "images/gift14_2.jpg",
+          "images/gift14_3.jpg"
+        ]
+      },
+      daoxiangcuncc1: {
+        img: "images/xigewei1.jpg",
+        title: "精品高粱米",
+        price: "¥125.00",
+        description: "精品高粱米，精致包装，送礼佳品。",
+        images: [
+          "images/xigewei1_1.jpg",
+          "images/xigewei1_2.jpg",
+          "images/xigewei1_3.jpg"
+        ]
+      },
+      daoxiangcuncc2: {
+        img: "images/gift8.jpg",
+        title: "精品荞麦面",
+        price: "¥145.00",
+        description: "精品荞麦面，丰富内容，适合多种场合。",
+        images: [
+          "images/gift8_1.jpg",
+          "images/gift8_2.jpg",
+          "images/gift8_3.jpg"
+        ]
+      },
+       daoxiangcuncc3: {
+        img: "images/daoxiangcun2025_2.jpg",
+        title: "双黄咸大雁蛋",
+        price: "¥125.00",
+        description: "精双黄咸大雁蛋，精致包装，送礼佳品。",
         images: [
           "images/daoxiangcun2025_2_1.jpg",
-          "images/daoxiangcun2025_2_2.jpg"
+          "images/daoxiangcun2025_2_2.jpg",
+          "images/daoxiangcun2025_2_3.jpg"
+        ]
+      },
+      daoxiangcuncc4: {
+        img: "images/gift8.jpg",
+        title: "五谷杂粮",
+        price: "¥145.00",
+        description: "五谷杂粮，丰富内容，适合多种场合。",
+        images: [
+          "images/gift11_1.jpg",
+          "images/gift11_1.jpg",
+          "images/gift11_1.jpg"
+        ]
+      },
+      daoxiangcuncc5: {
+        img: "images/ruojianxiaomi.jpg",
+        title: "一级弱碱小米",
+        price: "¥145.00",
+        description: "一级弱碱小米，丰富内容，适合多种场合。",
+        images: [
+          "images/gift9_1.jpg",
+          "images/gift9_2.jpg",
+          "images/gift9_3.jpg"
         ]
       },
       fengweipai1: {
-        img: "images/fengweipai1.jpg",
-        title: "锋味派礼盒1",
-        price: "¥110.00",
-        description: "锋味派礼盒1，独特风味，满足您的味蕾。",
+        img: "images/wuguzaliang.jpg",
+        title: "五谷杂粮",
+        price: "¥125.00",
+        description: "五谷杂粮，精致包装，送礼佳品。",
         images: [
-          "images/fengweipai1_1.jpg",
-          "images/fengweipai1_2.jpg"
+          "images/gift11_1.jpg",
+          "images/gift11_2.jpg",
+          "images/gift11_3.jpg"
         ]
       },
       fengweipai2: {
-        img: "images/fengweipai2.jpg",
-        title: "锋味派礼盒2",
-        price: "¥130.00",
-        description: "锋味派礼盒2，精选优质原料，口感丰富。",
+        img: "images/ruojianxiaomi.jpg",
+        title: "一级弱碱小米",
+        price: "¥125.00",
+        description: "一级弱碱小米，精致包装，送礼佳品。",
         images: [
-          "images/fengweipai2_1.jpg",
-          "images/fengweipai2_2.jpg"
+          "images/gift9_1.jpg",
+          "images/gift9_2.jpg",
+          "images/gift9_3.jpg"
+        ]
+      },
+      fengweipai3: {
+        img: "images/meicheng2.jpg",
+        title: "藜麦（三色藜麦）",
+        price: "¥125.00",
+        description: "藜麦（三色藜麦），精致包装，送礼佳品。",
+        images: [
+          "images/meicheng2_1.jpg",
+          "images/meicheng2_2.jpg",
+          "images/meicheng2_3.jpg"
+        ]
+      },
+      fengweipai4: {
+        img: "images/gift10.jpg",
+        title: "农村笨鸡蛋",
+        price: "¥125.00",
+        description: "农村笨鸡蛋，精致包装，送礼佳品。",
+        images: [
+          "images/gift10_1.jpg",
+          "images/gift10_2.jpg",
+          "images/gift10_3.jpg"
+        ]
+      },
+      fengweipai5: {
+        img: "images/gift14.jpg",
+        title: "全麦面粉",
+        price: "¥125.00",
+        description: "全面面粉，精致包装，送礼佳品。",
+        images: [
+          "images/gift14_1.jpg",
+          "images/gift14_2.jpg",
+          "images/gift14_3.jpg"
+        ]
+      },
+      fengweipai6: {
+        img: "images/yangmai.jpg",
+        title: "燕麦",
+        price: "¥125.00",
+        description: "燕麦，精致包装，送礼佳品。",
+        images: [
+          "images/yangmai_1.jpg",
+          "images/yangmai_2.jpg",
+          "images/yangmai_3.jpg"
         ]
       },
       jiaxiangxi1: {
-        img: "images/jiaxiangxi1.jpg",
-        title: "嘉乡希礼盒1",
+        img: "images/xigewei1.jpg",
+        title: "精品高粱米",
         price: "¥125.00",
-        description: "嘉乡希礼盒1，精致包装，送礼佳品。",
+        description: "精品高粱米，精致包装，送礼佳品。",
         images: [
-          "images/jiaxiangxi1_1.jpg",
-          "images/jiaxiangxi1_2.jpg"
+          "images/xigewei1_1.jpg",
+          "images/xigewei1_2.jpg",
+          "images/xigewei1_3.jpg"
         ]
       },
       jiaxiangxi2: {
-        img: "images/jiaxiangxi2.jpg",
-        title: "嘉乡希礼盒2",
-        price: "¥145.00",
-        description: "嘉乡希礼盒2，丰富内容，适合多种场合。",
+        img: "images/daoxiangcun2025_2.jpg",
+        title: "双黄咸大雁蛋",
+        price: "¥125.00",
+        description: "精双黄咸大雁蛋，精致包装，送礼佳品。",
         images: [
-          "images/jiaxiangxi2_1.jpg",
-          "images/jiaxiangxi2_2.jpg"
+          "images/daoxiangcun2025_2_1.jpg",
+          "images/daoxiangcun2025_2_2.jpg",
+          "images/daoxiangcun2025_2_3.jpg"
         ]
-      }
+      },
+      jiaxiangxi3: {
+        img: "images/ruojianxiaomi.jpg",
+        title: "一级弱碱小米",
+        price: "¥125.00",
+        description: "一级弱碱小米，精致包装，送礼佳品。",
+        images: [
+          "images/gift9_1.jpg",
+          "images/gift9_2.jpg",
+          "images/gift9_3.jpg"
+        ]
+      },
+      jiaxiangxi4: {
+        img: "images/xigewei2.jpg",
+        title: "五常稻花香",
+        price: "¥130.00",
+        description: "五常稻花香礼盒，包装精美，适合送礼。",
+        images: [
+          "images/xigewei2_1.jpg",
+          "images/xigewei2_2.jpg",
+          "images/xigewei2_3.jpg"
+        ]
+      },
+      jiaxiangxi5: {
+        img: "jinmaimianfen.jpg",
+        title: "金麦面粉",
+        price: "¥130.00",
+        description: "金麦面粉香礼盒，包装精美，适合送礼。",
+        images: [
+          "images/jinmaimianfen_1.jpg",
+          "images/jinmaimianfen_2.jpg",
+          "images/jinmaimianfen_3.jpg"
+        ]
+      },
+      jiaxiangxi6: {
+        img: "images/gift14.jpg",
+        title: "全麦面粉",
+        price: "¥130.00",
+        description: "全麦面粉，精选优质原料，口感丰富。",
+        images: [
+          "images/gift14_1.jpg",
+          "images/gift14_2.jpg",
+          "images/gift14_3.jpg"
+        ]
+      },
     };
 
     function showDetails(productId) {
