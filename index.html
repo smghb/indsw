@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -50,7 +50,7 @@
     }
 
     /* 设置商品卡片样式 */
-    .card { background: #d2f0d2; padding: 15px; border-radius: 8px; text-align: center; cursor: pointer; }
+    .card { background: #b9e8c9; padding: 15px; border-radius: 8px; text-align: center; cursor: pointer; }
     .card img { max-width: 100%; height: auto; border-radius: 4px; }
     .card .title { margin: 10px 0 5px; font-size: 16px; color: #333; }
     .card .price { font-size: 18px; color: #c00; }
@@ -179,7 +179,7 @@
         <div class="title">韵味五芳</div>
         <div class="price">¥159.00</div>
       </div>
-      <!-- 隐藏的商品卡片，属于五芳斋福利定制款 -->
+      <!-- 五芳斋福利定制款商品卡片 -->
       <div class="card category-custom" style="display: none;" onclick="showDetails('custom1')">
         <img src="images/gift11.jpg" alt="臻享五芳">
         <div class="title">臻享五芳</div>
@@ -187,6 +187,16 @@
       </div>
       <div class="card category-custom" style="display: none;" onclick="showDetails('custom2')">
         <img src="images/gift12.jpg" alt="尊享五芳">
+        <div class="title">尊享五芳</div>
+        <div class="price">¥299.00</div>
+      </div>
+      <div class="card category-custom" style="display: none;" onclick="showDetails('custom3')">
+        <img src="images/gift13.jpg" alt="臻享五芳">
+        <div class="title">臻享五芳</div>
+        <div class="price">¥199.00</div>
+      </div>
+      <div class="card category-custom" style="display: none;" onclick="showDetails('custom4')">
+        <img src="images/gift14.jpg" alt="尊享五芳">
         <div class="title">尊享五芳</div>
         <div class="price">¥299.00</div>
       </div>
@@ -260,6 +270,20 @@
         <div class="title">锋味派礼盒2</div>
         <div class="price">¥130.00</div>
       </div>
+      <div class="card category-fengweipai" style="display: none;" onclick="showDetails('fengweipai2')">
+        <img src="images/fengweipai3.jpg" alt="锋味派礼盒3">
+        <!-- 替换为锋味派的商品图片 -->
+        <div class="title">锋味派礼盒2</div>
+        <div class="price">¥130.00</div>
+      </div>
+
+      <div class="card category-fengweipai" style="display: none;" onclick="showDetails('fengweipai2')">
+        <img src="images/fengweipai4.jpg" alt="锋味派礼盒4">
+        <!-- 替换为锋味派的商品图片 -->
+        <div class="title">锋味派礼盒2</div>
+        <div class="price">¥130.00</div>
+      </div>
+
 
       <!-- 新增的商品卡片，属于嘉乡希 -->
       <div class="card category-jiaxiangxi" style="display: none;" onclick="showDetails('jiaxiangxi1')">
@@ -287,12 +311,23 @@
 
   <script>
     function showCategory(category) {
+      console.log('Showing category:', category); // 添加调试日志
+      
+      // 隐藏所有卡片
       document.querySelectorAll('.card').forEach(card => {
         card.style.display = 'none';
       });
-      document.querySelectorAll(`.category-${category}`).forEach(card => {
+      
+      // 显示选中类别的卡片
+      const cardsToShow = document.querySelectorAll(`.category-${category}`);
+      console.log(`Found ${cardsToShow.length} cards for category ${category}`); // 添加调试日志
+      
+      cardsToShow.forEach(card => {
+        console.log('Showing card:', card.querySelector('.title').textContent); // 添加调试日志
         card.style.display = 'block';
       });
+      
+      // 更新按钮状态
       document.querySelectorAll('nav button').forEach(button => {
         button.classList.remove('active');
       });
